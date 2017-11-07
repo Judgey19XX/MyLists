@@ -1,5 +1,6 @@
 package com.example.judgel2.mylists;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
     private String[] candidateNames;
+
+    public void onButtonClick(View v){
+        startActivity(new Intent(this, PhotoListActivity.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
